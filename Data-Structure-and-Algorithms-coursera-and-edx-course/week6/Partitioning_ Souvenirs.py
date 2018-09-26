@@ -1,6 +1,6 @@
 
 #uses python2
-def solution(values):
+def Partitioning(values):
     total = sum(values)
     if len(values) < 3 or total % 3:  # 1
         return 0                      
@@ -21,4 +21,4 @@ def solution(values):
 n = int(input())
 values = raw_input()
 values = [int (x) for x in values.split()]
-print (solution(values))
+print (Partitioning(values))
